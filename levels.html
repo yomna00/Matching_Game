@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matching Game - Start</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        background: url("img/2.gif"),
+          linear-gradient(135deg, #000428, #004e92) no-repeat center center
+            fixed;
+        background-size: cover;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .start-container {
+        background: rgba(0, 0, 0, 0.7);
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 400px; /* Adjust width as needed */
+      }
+
+      .cenrt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+      }
+
+      .btn {
+        background: #ff6600;
+        color: #fff;
+        border: none;
+        padding: 12px 20px;
+        margin: 10px;
+        cursor: pointer;
+        font-size: 18px;
+        border-radius: 8px;
+        transition: 0.3s;
+        display: block;
+        width: 200px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .btn:hover {
+        background: #ff4500;
+        box-shadow: 0 0 15px rgba(255, 102, 0, 0.7);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="start-container">
+      <h1>🔥 Matching Game 🔥</h1>
+      <div class="cenrt">
+        <button class="btn" onclick="level1()">▶ Easy</button>
+        <button class="btn" onclick="level2()">▶ Maddel</button>
+        <button class="btn" onclick="level3()">▶ Hard</button>
+      </div>
+    </div>
+
+    <script>
+      function level1() {
+        window.location.href = "level1.html";
+      }
+
+      function level2() {
+        window.location.href = "level2.html";
+      }
+
+      function level3() {
+        window.location.href = "level3.html";
+      }
+    </script>
+  </body>
+</html>
